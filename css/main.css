@@ -765,6 +765,9 @@ body {
     line-height: 1.75rem;
   }
 }
+.footer_ayalantonov {
+  display: block;
+}
 
 .page-loader {
   position: fixed;
