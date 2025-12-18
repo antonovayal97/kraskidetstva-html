@@ -176,10 +176,9 @@
   position: relative;
   z-index: 1;
   font-family: "TikTok", sans-serif;
-  font-weight: 630;
+  font-weight: 600;
   font-size: 2.6875rem;
   line-height: 2.625rem;
-  letter-spacing: -0.03em;
   color: #1d1d20;
   margin-bottom: 0.5rem;
 }

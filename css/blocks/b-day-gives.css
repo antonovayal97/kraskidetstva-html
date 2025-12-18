@@ -1,0 +1,53 @@
+.b-day-gives {
+  padding: 5.5rem 0;
+}
+.b-day-gives__title {
+  margin-bottom: 3rem;
+}
+.b-day-gives__cards {
+  display: flex;
+  gap: 0.5rem;
+}
+.b-day-gives__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4rem;
+  padding: 2rem;
+  width: 34.625rem;
+  height: 24.125rem;
+}
+.b-day-gives__card--1 {
+  background-color: #fbddea;
+  border: 0.125rem solid #ffb4d4;
+}
+.b-day-gives__card--2 {
+  background-color: #c8ff70;
+  border: 0.125rem solid #a6d934;
+}
+.b-day-gives__card--3 {
+  background-color: #caf4ff;
+  border: 0.125rem solid #8cd3e6;
+}
+.b-day-gives__card-title {
+  font-family: "TikTok", sans-serif;
+  font-weight: 630;
+  font-size: 2.75rem;
+  line-height: 2.64rem;
+  letter-spacing: -0.04em;
+  color: #1d1d20;
+}
+.b-day-gives__card-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 0;
+}
+.b-day-gives__card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  line-height: 0;
+}

@@ -103,6 +103,11 @@
   line-height: 1.25rem;
   color: #1d1d20;
 }
+.main-prices__card-description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
 .main-prices__card-prices {
   position: relative;
   z-index: 1;

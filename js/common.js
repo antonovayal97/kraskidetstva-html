@@ -93,6 +93,34 @@ document.addEventListener("DOMContentLoaded", () => {
     mainMenuSwiper.update();
   });
 
+  const bDayParkSwiper = new Swiper(".b-day-park__slide", {
+    slidesPerView: "auto",
+    spaceBetween: 1.5 * getRem(),
+    slidesOffsetBefore: 1 * getRem(),
+    slidesOffsetAfter: 1 * getRem(),
+    // If we need pagination
+    //pagination: {
+    //  el: ".swiper-pagination",
+    //},
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".b-day-park .c-title__arrow--next",
+      prevEl: ".b-day-park .c-title__arrow--prev",
+    },
+
+    breakpoints: {
+      992: {
+        slidesOffsetBefore: 7.5 * getRem(),
+        slidesOffsetAfter: 7.5 * getRem(),
+      },
+    },
+  });
+
+  window.addEventListener("resize", () => {
+    bDayParkSwiper.update();
+  });
+
   const mainUslugiSwiper = new Swiper(".main-uslugi__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.5 * getRem(),
@@ -115,6 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesOffsetAfter: 7.5 * getRem(),
       },
     },
+  });
+
+  window.addEventListener("resize", () => {
+    mainUslugiSwiper.update();
   });
 
   let mainMenuTabs = document.querySelectorAll(".main-menu__tab");
@@ -183,4 +215,14 @@ document.addEventListener("DOMContentLoaded", () => {
       button.style.display = "none";
     });
   }
+
+  let faqs = document.querySelectorAll(".faq__block");
+
+  faqs.forEach((faq) => {
+    let title = faq.querySelector(".faq__block-title");
+
+    title.addEventListener("click", () => {
+      faq.classList.toggle("faq__block--active");
+    });
+  });
 });

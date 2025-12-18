@@ -254,7 +254,7 @@ body {
   font-weight: 730;
   font-size: 8.125rem;
   line-height: 6.8125rem;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.085em;
   color: #1d1d20;
 }
 @media (max-width: 991.98px) {
@@ -335,7 +335,7 @@ body {
   font-family: "TikTok", sans-serif;
   font-weight: 950;
   font-size: 1.75rem;
-  line-height: 1.25rem;
+  line-height: 1.75rem;
   text-transform: uppercase;
   border-radius: 1rem;
 }
@@ -377,6 +377,17 @@ body {
 .button--outline:hover {
   color: #fff;
   background-color: #1d1d20;
+}
+
+form input {
+  border: 0.0625rem solid #e8e8e2;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  font-family: "Golos", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.755rem;
+  color: #999ead;
 }
 
 .header {

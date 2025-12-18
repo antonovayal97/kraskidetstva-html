@@ -43,8 +43,12 @@
     padding: 0.5rem 0.75rem;
     margin-bottom: 0.75rem;
     border-radius: 10rem;
+    font-family: "TikTok", sans-serif;
+    font-weight: 630;
     font-size: 0.75rem;
+    line-height: 0.765rem;
     letter-spacing: -0.05em;
+    text-transform: uppercase;
   }
 }
 .main-banner__title-content {
@@ -181,6 +185,12 @@
 }
 .main-banner__card--3 .main-banner__card-image {
   width: 11rem;
+}
+@media (max-width: 991.98px) {
+  .main-banner__card--3 .main-banner__card-image {
+    width: 5rem;
+    bottom: -0.5rem;
+  }
 }
 .main-banner__card--4 {
   border: 0.125rem solid #c7b4ff;
