@@ -24,7 +24,6 @@ window.addEventListener("load", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
-  const map = document.querySelector(".main-contacts__map");
 
   const contentPhone = document.querySelector(".main-bday__content-phone");
 
@@ -121,6 +120,24 @@ document.addEventListener("DOMContentLoaded", () => {
     bDayParkSwiper.update();
   });
 
+  const bDayAnimSwiper = new Swiper(".b-day-anim__slider", {
+    slidesPerView: "auto",
+    spaceBetween: 1.5 * getRem(),
+    slidesOffsetBefore: 1 * getRem(),
+    slidesOffsetAfter: 1 * getRem(),
+
+    breakpoints: {
+      992: {
+        slidesOffsetBefore: 7.5 * getRem(),
+        slidesOffsetAfter: 7.5 * getRem(),
+      },
+    },
+  });
+
+  window.addEventListener("resize", () => {
+    bDayAnimSwiper.update();
+  });
+
   const mainUslugiSwiper = new Swiper(".main-uslugi__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.5 * getRem(),
@@ -173,36 +190,6 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       header.classList.toggle("header--mobile-menu-active");
     });
-  }
-
-  if (map) {
-    ymaps.ready(init);
-
-    function init() {
-      function parseCoordinates(str) {
-        try {
-          const coords = str.replace(/[\[\] ]/g, "").split(",");
-          return coords.map((coord) => parseFloat(coord));
-        } catch (e) {
-          console.error("Ошибка парсинга координат:", e);
-          return [55.755864, 37.617698];
-        }
-      }
-
-      if (map && map.dataset.coordinates) {
-        const coordinates1 = parseCoordinates(map.dataset.coordinates);
-
-        const map_1 = new ymaps.Map("map", {
-          center: coordinates1,
-          zoom: 10,
-          controls: ["zoomControl", "geolocationControl"],
-        });
-
-        const placemark_1 = new ymaps.Placemark(coordinates1, {});
-
-        map_1.geoObjects.add(placemark_1);
-      }
-    }
   }
 
   if (contentPhone) {
