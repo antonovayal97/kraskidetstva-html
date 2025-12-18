@@ -293,6 +293,23 @@ body {
   transform: rotate(180deg);
 }
 
+.c-description {
+  width: 62.5rem;
+}
+.c-description * {
+  font-family: "Golos", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.755rem;
+  color: #1d1d20;
+}
+.c-description p {
+  margin-bottom: 1rem;
+}
+.c-description p:last-child {
+  margin-bottom: 0;
+}
+
 .swiper-pagination {
   display: none;
 }

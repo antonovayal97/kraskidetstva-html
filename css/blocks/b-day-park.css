@@ -1,3 +1,6 @@
+.b-day-park {
+  padding: 6.25rem 0;
+}
 .b-day-park__title {
   margin-bottom: 3.75rem;
 }
@@ -11,6 +14,8 @@
   position: relative;
   padding: 2rem 2.8125rem;
   width: 105rem;
+  height: 54.6875rem;
+  margin-bottom: 7.5rem;
 }
 .b-day-park__card-title {
   font-family: "TikTok", sans-serif;
@@ -32,6 +37,7 @@
 }
 .b-day-park__card-images {
   display: flex;
+  margin-top: 5.375rem;
 }
 .b-day-park__card-image {
   position: relative;
@@ -41,10 +47,17 @@
   border-radius: 4rem;
   overflow: hidden;
 }
+.b-day-park__card-image-1 {
+  transform: rotate(5deg);
+}
 .b-day-park__card-image-2 {
   margin-left: -3.125rem;
   margin-right: -11.875rem;
+  transform: translateY(-3.875rem) rotate(-6deg);
   z-index: 1;
+}
+.b-day-park__card-image-3 {
+  transform: translateY(3.5625rem) rotate(5deg);
 }
 .b-day-park__card-image img {
   width: 100%;
