@@ -2,11 +2,31 @@
   position: relative;
   padding: 6.25rem 0;
 }
+@media (max-width: 991.98px) {
+  .b-day-tema-room {
+    padding: 2rem 0;
+  }
+}
 .b-day-tema-room__title {
   margin-bottom: 2rem;
 }
+@media (max-width: 991.98px) {
+  .b-day-tema-room__title {
+    margin-bottom: 1rem;
+  }
+}
 .b-day-tema-room__title h2 {
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .b-day-tema-room__title h2 {
+    font-family: "TikTok", sans-serif;
+    font-weight: 400;
+    font-size: 2.75rem;
+    line-height: 2.64rem;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
 }
 .b-day-tema-room__description {
   font-family: "Golos", sans-serif;
@@ -17,15 +37,37 @@
   margin-bottom: 2rem;
   width: 62.5rem;
 }
+@media (max-width: 991.98px) {
+  .b-day-tema-room__description {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: "Golos", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.12875rem;
+    color: #fff;
+  }
+}
 .b-day-tema-room__images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+@media (max-width: 991.98px) {
+  .b-day-tema-room__images {
+    gap: 0.5rem;
+  }
+}
 .b-day-tema-room__image {
   height: 37.5rem;
   border-radius: 4rem;
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .b-day-tema-room__image {
+    border-radius: 1.5rem;
+    height: 7.5rem;
+  }
 }
 .b-day-tema-room__image img {
   width: 100%;
@@ -38,4 +80,29 @@
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: -1;
+}
+.b-day-tema-room__bg img {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .b-day-tema-room__bg {
+    display: none;
+  }
+}
+.b-day-tema-room__bg-mobile {
+  display: none;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+.b-day-tema-room__bg-mobile img {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .b-day-tema-room__bg-mobile {
+    display: block;
+  }
 }

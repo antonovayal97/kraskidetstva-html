@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mainParkSwiper.update();
   });
 
-  const mainMenuSwiper = new Swiper(".main-menu__slide", {
+  const mainMenuSwiper = new Swiper(".main-menu .main-menu__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
@@ -90,6 +90,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", () => {
     mainMenuSwiper.update();
+  });
+
+  const bDayKafeSwiper = new Swiper(".b-day-kafe .main-menu__slide", {
+    slidesPerView: "auto",
+    spaceBetween: 0.5 * getRem(),
+    slidesOffsetBefore: 1 * getRem(),
+    slidesOffsetAfter: 1 * getRem(),
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".b-day-kafe .c-title__arrow--next",
+      prevEl: ".b-day-kafe .c-title__arrow--prev",
+    },
+
+    breakpoints: {
+      992: {
+        slidesOffsetBefore: 7.5 * getRem(),
+        slidesOffsetAfter: 7.5 * getRem(),
+      },
+    },
+  });
+
+  window.addEventListener("resize", () => {
+    bDayKafeSwiper.update();
   });
 
   const bDayParkSwiper = new Swiper(".b-day-park__slide", {
@@ -122,12 +150,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const bDayAnimSwiper = new Swiper(".b-day-anim__slider", {
     slidesPerView: "auto",
-    spaceBetween: 1.5 * getRem(),
+    spaceBetween: -0.6 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
 
     breakpoints: {
       992: {
+        spaceBetween: -2.5 * getRem(),
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
       },
@@ -164,6 +193,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", () => {
     mainUslugiSwiper.update();
+  });
+
+  const bDayUslugiSwiper = new Swiper(".b-day-uslugi__slide", {
+    slidesPerView: "auto",
+    spaceBetween: 0.5 * getRem(),
+    slidesOffsetBefore: 1 * getRem(),
+    slidesOffsetAfter: 1 * getRem(),
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".b-day-uslugi .c-title__arrow--next",
+      prevEl: ".b-day-uslugi .c-title__arrow--prev",
+    },
+
+    breakpoints: {
+      992: {
+        slidesOffsetBefore: 7.5 * getRem(),
+        slidesOffsetAfter: 7.5 * getRem(),
+      },
+    },
+  });
+
+  window.addEventListener("resize", () => {
+    bDayUslugiSwiper.update();
   });
 
   let mainMenuTabs = document.querySelectorAll(".main-menu__tab");

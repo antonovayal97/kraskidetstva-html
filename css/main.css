@@ -296,6 +296,11 @@ body {
 .c-description {
   width: 62.5rem;
 }
+@media (max-width: 991.98px) {
+  .c-description {
+    width: 100%;
+  }
+}
 .c-description * {
   font-family: "Golos", sans-serif;
   font-weight: 400;
@@ -303,8 +308,19 @@ body {
   line-height: 1.755rem;
   color: #1d1d20;
 }
+@media (max-width: 991.98px) {
+  .c-description * {
+    font-size: 0.875rem;
+    line-height: 1.12875rem;
+  }
+}
 .c-description p {
   margin-bottom: 1rem;
+}
+@media (max-width: 991.98px) {
+  .c-description p {
+    margin-bottom: 0.5rem;
+  }
 }
 .c-description p:last-child {
   margin-bottom: 0;
