@@ -31,7 +31,7 @@
   .b-day-form__image-mobile {
     display: block;
     position: absolute;
-    top: 55%;
+    top: 54.2%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -74,8 +74,9 @@
 @media (max-width: 991.98px) {
   .b-day-form__form-title h2 {
     font-size: 1.875rem;
-    line-height: 1.8375rem;
-    letter-spacing: -0.05em;
+    line-height: 1.7975rem;
+    letter-spacing: -0.08em;
+    text-transform: none;
   }
 }
 .b-day-form__form-description {

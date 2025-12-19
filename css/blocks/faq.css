@@ -9,6 +9,11 @@
 .faq__title {
   margin-bottom: 3rem;
 }
+@media (max-width: 991.98px) {
+  .faq__title h2 {
+    letter-spacing: -0.09em;
+  }
+}
 .faq__blocks {
   display: flex;
   flex-direction: column;
@@ -41,7 +46,7 @@
     font-weight: 430;
     font-size: 1.5rem;
     line-height: 1.44rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.066em;
   }
 }
 .faq__block-icon {

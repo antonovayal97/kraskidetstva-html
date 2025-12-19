@@ -96,7 +96,7 @@
     padding-bottom: 1.75rem;
     border-radius: 2rem;
     background-color: #fff;
-    border: none;
+    border: none !important;
   }
 }
 .main-uslugi__card--1 {
@@ -187,6 +187,7 @@
   .main-uslugi__card-name {
     font-size: 2rem;
     line-height: 1.92rem;
+    letter-spacing: -0.08em;
   }
 }
 .main-uslugi__card-description {
@@ -201,6 +202,6 @@
 @media (max-width: 991.98px) {
   .main-uslugi__card-description {
     font-size: 0.875rem;
-    line-height: 1.12875rem;
+    line-height: 1.11775rem;
   }
 }

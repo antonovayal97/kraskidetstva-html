@@ -5,9 +5,9 @@
 }
 @media (max-width: 991.98px) {
   .b-day-uslugi {
-    margin-top: 10rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    overflow: hidden;
   }
 }
 .b-day-uslugi__title {
@@ -85,7 +85,7 @@
   .b-day-uslugi__personages {
     width: 15.5rem;
     height: 15.5rem;
-    top: -5rem;
+    top: -4.99rem;
     right: -3.1875rem;
   }
 }
@@ -111,7 +111,7 @@
   display: none;
   position: absolute;
   z-index: -1;
-  top: -8rem;
+  top: -8.2rem;
   left: 50%;
   width: 100vw;
   transform: translate(-50%, 0%);
