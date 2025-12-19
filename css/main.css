@@ -251,10 +251,10 @@ body {
 }
 .c-title h2 {
   font-family: "TikTok", sans-serif;
-  font-weight: 730;
+  font-weight: 830;
   font-size: 8.125rem;
   line-height: 6.8125rem;
-  letter-spacing: -0.085em;
+  letter-spacing: -0.04em;
   color: #1d1d20;
 }
 @media (max-width: 991.98px) {
@@ -369,6 +369,7 @@ body {
   font-weight: 950;
   font-size: 1.75rem;
   line-height: 1.75rem;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
   border-radius: 1rem;
 }
@@ -384,7 +385,7 @@ body {
 .button--solid {
   color: #1d1d20;
   background-color: #98e51c;
-  padding: 2.25rem 2rem;
+  padding: 1.75rem 2rem;
 }
 @media (max-width: 991.98px) {
   .button--solid {
@@ -399,7 +400,8 @@ body {
   color: #1d1d20;
   border: 0.25rem solid #1d1d20;
   background-color: transparent;
-  padding: 2rem 1.75rem;
+  padding: 1.75rem 1.75rem;
+  letter-spacing: -0.04em;
 }
 @media (max-width: 991.98px) {
   .button--outline {
@@ -415,12 +417,20 @@ body {
 form input {
   border: 0.0625rem solid #e8e8e2;
   border-radius: 1.25rem;
-  padding: 2rem;
+  padding: 1.9rem 2rem;
   font-family: "Golos", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.755rem;
   color: #999ead;
+}
+@media (max-width: 991.98px) {
+  form input {
+    padding: 1.5rem 2rem;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 .header {
@@ -456,13 +466,16 @@ form input {
           backdrop-filter: blur(23.2000007629px);
   background: rgba(255, 255, 255, 0.74);
   border-radius: 1.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   width: 100%;
 }
 @media (max-width: 991.98px) {
   .header__block {
     padding: 0.5rem 1rem;
   }
+}
+.header__menu {
+  margin-left: -0.27rem;
 }
 @media (max-width: 991.98px) {
   .header__menu {
@@ -472,14 +485,14 @@ form input {
 .header__menu ul {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .header__menu ul li {
   font-family: "TikTok", sans-serif;
   font-weight: 530;
   font-size: 1.5rem;
   line-height: 83%;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.036em;
   color: #1d1d20;
 }
 .header__menu ul li a:hover {
@@ -487,7 +500,7 @@ form input {
 }
 .header__info {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.75rem;
 }
 @media (max-width: 991.98px) {
   .header__info {
@@ -498,11 +511,11 @@ form input {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 .header__socials {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .header__socials .c-social {
   color: #1d1d20;
@@ -516,6 +529,7 @@ form input {
   font-weight: 950;
   font-size: 1.25rem;
   line-height: 1.25rem;
+  letter-spacing: 0.015em;
   text-transform: uppercase;
   color: #fff;
   display: block;
@@ -526,9 +540,9 @@ form input {
 .header__place {
   font-family: "TikTok", sans-serif;
   font-weight: 530;
-  font-size: 1.5rem;
-  line-height: 1.4625rem;
-  letter-spacing: -0.04em;
+  font-size: 1.0625rem;
+  line-height: 1.02rem;
+  letter-spacing: -0.06em;
   color: #1d1d20;
 }
 .header__burger {
@@ -642,7 +656,7 @@ form input {
 }
 .footer__image {
   position: absolute;
-  top: 0;
+  top: -0.12rem;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: -1;
@@ -717,6 +731,7 @@ form input {
   font-weight: 950;
   font-size: 1.25rem;
   line-height: 1.25rem;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #1d1d20;
   background-color: #98e51c;
@@ -735,7 +750,7 @@ form input {
 .footer__right {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 @media (max-width: 991.98px) {
   .footer__right {
@@ -754,12 +769,15 @@ form input {
 }
 .footer__socials {
   display: flex;
-  gap: 1.625rem;
+  gap: 1rem;
 }
 @media (max-width: 991.98px) {
   .footer__socials {
     gap: 1.25rem;
   }
+}
+.footer__socials .c-social {
+  padding: 0 0.3125rem;
 }
 .footer__socials .c-social .icon {
   width: 3.375rem;
@@ -768,9 +786,9 @@ form input {
 }
 .footer__phone {
   font-family: "TikTok", sans-serif;
-  font-weight: 950;
+  font-weight: 900;
   font-size: 1.75rem;
-  line-height: 1.25rem;
+  line-height: 1.65rem;
   text-transform: uppercase;
   color: #fff;
 }
@@ -784,7 +802,7 @@ form input {
 .footer__links {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
 @media (max-width: 991.98px) {
   .footer__links {
@@ -795,7 +813,7 @@ form input {
   font-family: "Golos", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 1.75rem;
+  line-height: 1.65rem;
   color: #fff;
 }
 @media (max-width: 991.98px) {

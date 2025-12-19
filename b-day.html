@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/blocks/main-menu.min.css">
     <link rel="stylesheet" href="./css/blocks/main-prices.min.css">
-    <link rel="stylesheet" href="./css/blocks/main-contacts.min.css">
     <link rel="stylesheet" href="./css/blocks/main-uslugi.min.css">
     <link rel="stylesheet" href="./css/blocks/b-day-banner.min.css">
     <link rel="stylesheet" href="./css/blocks/b-day-park.min.css">
@@ -21,8 +20,10 @@
     <link rel="stylesheet" href="./css/blocks/b-day-kafe.min.css">
     <link rel="stylesheet" href="./css/blocks/b-day-uslugi.min.css">
     <link rel="stylesheet" href="./css/blocks/b-day-gives.min.css">
+    <link rel="stylesheet" href="./css/blocks/b-day-prices.min.css">
     <link rel="stylesheet" href="./css/blocks/faq.min.css">
     <link rel="stylesheet" href="./css/blocks/b-day-form.min.css">
+    <link rel="stylesheet" href="./css/blocks/b-day-contacts.min.css">
   </head>
   <body>
     <header class="header">
@@ -30,6 +31,7 @@
         <div class="header__block"><a class="header__logo" href="#"><img src="./img/logo.svg" alt="logo"></a>
           <nav class="header__menu">
             <ul>
+              <li><a href="#">Главная</a></li>
               <li><a href="#">О компании</a></li>
               <li><a href="#">Кафе</a></li>
               <li><a href="#">Новости</a></li>
@@ -93,7 +95,7 @@
     </header>
     <main>
       <div class="b-day-banner">
-        <div class="b-day-banner__image"><img src="./img/b-day-banner.webp" alt="alt"></div>
+        <div class="b-day-banner__image"><img src="./img/b-day-banner.svg" alt="alt"></div>
         <div class="b-day-banner__image-mobile"><img src="./img/b-day-banner-mobile.webp" alt="alt"></div>
         <div class="c-container">
           <div class="b-day-banner__content">
@@ -103,7 +105,9 @@
                 <div class="b-day-banner__title">
                   <h1>Готовый <br>Праздник</h1>
                 </div>
-                <div class="b-day-banner__price"><span>от 11 000 ₽</span></div>
+                <div class="b-day-banner__price">
+                  <div class="b-day-banner__price-sprite"><img src="./img/b-day-banner__price-sprite.webp" alt=""></div><span>от 11 000 ₽</span>
+                </div>
               </div>
             </div>
             <div class="b-day-banner__button"><a class="button button--solid button--large" href="#">Узнать подробнее</a></div>
@@ -276,6 +280,7 @@
           </div>
         </div>
         <div class="b-day-kafe__bg"><img src="./img/b-day-kafe__bg.webp" alt="alt"></div>
+        <div class="b-day-kafe__bg-mobile"><img src="./img/b-day-kafe__bg-mobile.webp" alt="alt"></div>
       </div>
       <div class="b-day-uslugi c-container">
         <div class="c-title b-day-uslugi__title">
@@ -338,7 +343,7 @@
         </div>
         <div class="b-day-uslugi__personages"><img src="./img/b-day-uslugi__personages.webp" alt="alt"></div>
         <div class="b-day-uslugi__image"><img src="./img/b-day-uslugi.svg" alt="alt"></div>
-        <div class="b-day-uslugi__image-mobile"><img src="./img/main-uslugi-mobile.png" alt=""></div>
+        <div class="b-day-uslugi__image-mobile"><img src="./img/b-day-uslugi-mobile.svg" alt=""></div>
       </div>
       <div class="b-day-gives c-container">
         <div class="c-title b-day-gives__title">
@@ -362,8 +367,8 @@
           </div>
         </div>
       </div>
-      <div class="main-prices c-container">
-        <div class="c-title main-prices__title">
+      <div class="b-day-prices c-container">
+        <div class="c-title b-day-prices__title">
           <h2><div class="accient-title">Готовые</div> предложения</h2>
         </div>
         <div class="main-prices__cards">
@@ -452,6 +457,7 @@
       </div>
       <div class="b-day-form">
         <div class="b-day-form__image"><img src="./img/b-day-form.webp" alt=""></div>
+        <div class="b-day-form__image-mobile"><img src="./img/b-day-form-mobile.webp" alt=""></div>
         <div class="b-day-form__form c-container">
           <div class="b-day-form__form-title">
             <h2>Закажите звонок <br>банкетного менеджера</h2>
@@ -465,22 +471,22 @@
           </form>
         </div>
       </div>
-      <div class="main-contacts c-container">
-        <div class="c-title main-contacts__title">
+      <div class="b-day-contacts c-container">
+        <div class="c-title b-day-contacts__title">
           <h2>Контакты</h2>
         </div>
-        <div class="main-contacts__info">
-          <div class="main-contacts__info-address"><span>Волгоград, ТРК «7 звёзд»</span></div>
-          <div class="main-contacts__info-phone"><a href="tel: +7 903 467-55-57">+7 903 467-55-57</a></div>
+        <div class="b-day-contacts__info">
+          <div class="b-day-contacts__info-address"><span>Волгоград, ТРК «7 звёзд»</span></div>
+          <div class="b-day-contacts__info-phone"><a href="tel: +7 903 467-55-57">+7 903 467-55-57</a></div>
         </div>
-        <div class="main-contacts__map"><div style="position:relative;overflow:hidden;height: 100%;"><a href="https://yandex.ru/maps/org/kraski_detstva/86481605296/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краски детства</a><a href="https://yandex.ru/maps/38/volgograd/category/entertainment_center/184106372/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Развлекательный центр в Волгограде</a><a href="https://yandex.ru/maps/38/volgograd/category/play_room/191472689672/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Игровая комната в Волгограде</a><iframe src="https://yandex.ru/map-widget/v1/org/kraski_detstva/86481605296/?ll=44.604644%2C48.799020&z=14" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+        <div class="b-day-contacts__map"><div style="position:relative;overflow:hidden;height: 100%;"><a href="https://yandex.ru/maps/org/kraski_detstva/86481605296/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краски детства</a><a href="https://yandex.ru/maps/38/volgograd/category/entertainment_center/184106372/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Развлекательный центр в Волгограде</a><a href="https://yandex.ru/maps/38/volgograd/category/play_room/191472689672/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Игровая комната в Волгограде</a><iframe src="https://yandex.ru/map-widget/v1/org/kraski_detstva/86481605296/?ll=44.604644%2C48.799020&z=14" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div></div>
       </div>
       <div class="faq c-container">
         <div class="c-title faq__title">
           <h2>Часто задаваемые <div class="accient-title">вопросы</div></h2>
         </div>
         <div class="faq__blocks">
-          <div class="faq__block">
+          <div class="faq__block faq__block--active">
             <div class="faq__block-title"><span>Подойдёт ли парк для детей разного возраста?</span>
               <button class="faq__block-icon">
                 <svg class="icon faq-icon">

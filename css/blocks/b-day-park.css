@@ -18,7 +18,7 @@
     font-weight: 530;
     font-size: 2.75rem;
     line-height: 2.3925rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.067em;
     color: #1d1d20;
   }
 }
@@ -53,7 +53,7 @@
   font-weight: 950;
   font-size: 4rem;
   line-height: 4rem;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.032em;
   text-transform: uppercase;
   color: #1d1d20;
   margin-bottom: 3.0625rem;
@@ -62,7 +62,7 @@
   .b-day-park__card-title {
     font-size: 1.25rem;
     line-height: 1.25rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.045em;
     margin-bottom: 1.5rem;
   }
 }
@@ -83,7 +83,7 @@
 }
 .b-day-park__card-images {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -2.2rem;
   display: flex;
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -92,7 +92,7 @@
   .b-day-park__card-images {
     margin-left: -0.1875rem;
     margin-right: -0.1875rem;
-    bottom: -3rem;
+    bottom: -2.8rem;
   }
 }
 .b-day-park__card-image {

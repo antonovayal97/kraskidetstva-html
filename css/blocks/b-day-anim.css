@@ -17,18 +17,19 @@
     font-weight: 530;
     font-size: 2.75rem;
     line-height: 2.3925rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.06em;
     color: #1d1d20;
   }
 }
 .b-day-anim__slider {
   margin: 0 -7.5rem;
-  margin-top: 5.4375rem;
+  margin-top: 1.0075rem;
 }
 @media (max-width: 991.98px) {
   .b-day-anim__slider {
     margin: 0 -1rem;
-    margin-top: 2rem;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
   }
 }
 .b-day-anim__slider .swiper-slide {
@@ -50,7 +51,7 @@
 }
 @media (max-width: 991.98px) {
   .b-day-anim__slider .swiper-wrapper {
-    padding: 1rem 0;
+    padding: 3rem 0;
   }
 }
 .b-day-anim__card {

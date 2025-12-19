@@ -21,10 +21,10 @@
 @media (max-width: 991.98px) {
   .b-day-tema-room__title h2 {
     font-family: "TikTok", sans-serif;
-    font-weight: 400;
+    font-weight: 630;
     font-size: 2.75rem;
     line-height: 2.64rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.055em;
     color: #fff;
   }
 }
@@ -40,7 +40,7 @@
 @media (max-width: 991.98px) {
   .b-day-tema-room__description {
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     font-family: "Golos", sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
@@ -80,6 +80,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: -1;
+  line-height: 0;
 }
 .b-day-tema-room__bg img {
   width: 100%;
@@ -97,6 +98,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: -1;
+  line-height: 0;
 }
 .b-day-tema-room__bg-mobile img {
   width: 100%;

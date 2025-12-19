@@ -2,23 +2,68 @@
   position: relative;
   padding: 5.5rem 0;
 }
+@media (max-width: 991.98px) {
+  .b-day-kafe {
+    padding: 4rem 0;
+  }
+}
 .b-day-kafe__title {
   margin-bottom: 2rem;
 }
+@media (max-width: 991.98px) {
+  .b-day-kafe__title h2 {
+    font-family: "TikTok", sans-serif;
+    font-weight: 630;
+    font-size: 2.75rem;
+    line-height: 2.3925rem;
+    letter-spacing: -0.08em;
+    color: #1d1d20;
+  }
+}
 .b-day-kafe .c-description {
   margin-bottom: 3.5rem;
+}
+@media (max-width: 991.98px) {
+  .b-day-kafe .c-description {
+    margin-bottom: 2rem;
+  }
 }
 .b-day-kafe .c-title__arrows {
   margin-left: auto;
 }
 .b-day-kafe__bg {
   position: absolute;
-  top: -2rem;
+  top: -2.4rem;
   right: -7.5rem;
-  width: 51.375rem;
+  width: 51.575rem;
   height: 57.3125rem;
+  z-index: -1;
+}
+@media (max-width: 991.98px) {
+  .b-day-kafe__bg {
+    display: none;
+  }
 }
 .b-day-kafe__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.b-day-kafe__bg-mobile {
+  display: none;
+  position: absolute;
+  top: -3.45rem;
+  right: -1rem;
+  width: 13.7875rem;
+  height: 14.75rem;
+  z-index: -1;
+}
+@media (max-width: 991.98px) {
+  .b-day-kafe__bg-mobile {
+    display: block;
+  }
+}
+.b-day-kafe__bg-mobile img {
   width: 100%;
   height: 100%;
   object-fit: cover;

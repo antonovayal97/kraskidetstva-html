@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mainMenuSwiper = new Swiper(".main-menu .main-menu__slide", {
     slidesPerView: "auto",
-    spaceBetween: 0.5 * getRem(),
+    spaceBetween: 0.25 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
     // If we need pagination
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const bDayKafeSwiper = new Swiper(".b-day-kafe .main-menu__slide", {
     slidesPerView: "auto",
-    spaceBetween: 0.5 * getRem(),
+    spaceBetween: 0.25 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
     // If we need pagination

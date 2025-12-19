@@ -1,6 +1,11 @@
 .faq {
   padding: 6.25rem 0;
 }
+@media (max-width: 991.98px) {
+  .faq {
+    padding: 2rem 0;
+  }
+}
 .faq__title {
   margin-bottom: 3rem;
 }
@@ -14,6 +19,12 @@
   padding: 1.875rem 2.5rem;
   background-color: #fff;
 }
+@media (max-width: 991.98px) {
+  .faq__block {
+    padding: 1.5rem;
+    border-radius: 2.75rem;
+  }
+}
 .faq__block-title {
   display: flex;
   justify-content: space-between;
@@ -21,9 +32,17 @@
   font-weight: 630;
   font-size: 3rem;
   line-height: 2.52rem;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.067em;
   color: #1d1d20;
   cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .faq__block-title {
+    font-weight: 430;
+    font-size: 1.5rem;
+    line-height: 1.44rem;
+    letter-spacing: -0.03em;
+  }
 }
 .faq__block-icon {
   width: 3.5rem;
@@ -34,9 +53,22 @@
   color: #fff;
   line-height: 0;
 }
+@media (max-width: 991.98px) {
+  .faq__block-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+  }
+}
 .faq__block-icon .icon {
   width: 2rem;
   height: 2rem;
+}
+@media (max-width: 991.98px) {
+  .faq__block-icon .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 .faq__block-content {
   display: none;
@@ -46,6 +78,12 @@
   font-size: 1.5rem;
   line-height: 1.755rem;
   color: #2b2d33;
+}
+@media (max-width: 991.98px) {
+  .faq__block-content {
+    font-size: 0.875rem;
+    line-height: 1.12875rem;
+  }
 }
 .faq__block--active .faq__block-content {
   display: block;
