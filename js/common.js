@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
+        spaceBetween: 0.5 * getRem(),
       },
     },
   });
@@ -112,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
+        spaceBetween: 0.5 * getRem(),
       },
     },
   });
