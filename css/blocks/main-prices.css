@@ -184,6 +184,9 @@
   text-transform: uppercase;
   color: #1d1d20;
 }
+.main-prices__card-button .button:hover {
+  color: rgb(152, 229, 28);
+}
 @media (max-width: 849.99px) {
   .main-prices__card-button .button {
     font-size: 1.25rem;
