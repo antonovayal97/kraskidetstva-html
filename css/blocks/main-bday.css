@@ -159,6 +159,9 @@
   border-radius: 100rem;
   color: #fff;
 }
+.main-bday__content-phone-play:hover {
+  animation: grow 2s infinite;
+}
 .main-bday__content-phone-play .icon {
   width: 2rem;
   height: 2rem;
@@ -170,5 +173,14 @@
     border-radius: 2rem;
     padding: 1rem;
     padding-bottom: 0.871875rem;
+  }
+}
+
+@keyframes grow {
+  from {
+    box-shadow: 0px 0px 1em #ffffff;
+  }
+  to {
+    box-shadow: 0px 0px 3em #ffffff;
   }
 }

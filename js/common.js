@@ -40,46 +40,45 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     const mask = IMask(phone, maskOptions);
   });
+  const swipers = [];
 
-  const mainParkSwiper = new Swiper(".main-park__slider", {
+  function initSwiper(selector, options) {
+    const element = document.querySelector(selector);
+    if (!element) return null;
+
+    const swiper = new Swiper(selector, options);
+    swipers.push(swiper);
+    return swiper;
+  }
+
+  // ====== Инициализация ======
+
+  initSwiper(".main-park__slider", {
     slidesPerView: "auto",
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
+    pagination: { el: ".swiper-pagination" },
     breakpoints: {
       992: {
         spaceBetween: 0,
-        enabled: false, // отключаем swiper на десктопе
+        enabled: false,
         slidesOffsetBefore: 0,
         slidesOffsetAfter: 0,
       },
     },
   });
 
-  window.addEventListener("resize", () => {
-    mainParkSwiper.update();
-  });
-
-  const mainMenuSwiper = new Swiper(".main-menu .main-menu__slide", {
+  initSwiper(".main-menu .main-menu__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.25 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
+    pagination: { el: ".swiper-pagination" },
     navigation: {
       nextEl: ".main-menu .c-title__arrow--next",
       prevEl: ".main-menu .c-title__arrow--prev",
     },
-
     breakpoints: {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
@@ -89,26 +88,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  window.addEventListener("resize", () => {
-    mainMenuSwiper.update();
-  });
-
-  const bDayKafeSwiper = new Swiper(".b-day-kafe .main-menu__slide", {
+  initSwiper(".b-day-kafe .main-menu__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.25 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
+    pagination: { el: ".swiper-pagination" },
     navigation: {
       nextEl: ".b-day-kafe .c-title__arrow--next",
       prevEl: ".b-day-kafe .c-title__arrow--prev",
     },
-
     breakpoints: {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
@@ -118,26 +107,15 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  window.addEventListener("resize", () => {
-    bDayKafeSwiper.update();
-  });
-
-  const bDayParkSwiper = new Swiper(".b-day-park__slide", {
+  initSwiper(".b-day-park__slide", {
     slidesPerView: "auto",
     spaceBetween: 1.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    // If we need pagination
-    //pagination: {
-    //  el: ".swiper-pagination",
-    //},
-
-    // Navigation arrows
     navigation: {
       nextEl: ".b-day-park .c-title__arrow--next",
       prevEl: ".b-day-park .c-title__arrow--prev",
     },
-
     breakpoints: {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
@@ -146,16 +124,11 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  window.addEventListener("resize", () => {
-    bDayParkSwiper.update();
-  });
-
-  const bDayAnimSwiper = new Swiper(".b-day-anim__slider", {
+  initSwiper(".b-day-anim__slider", {
     slidesPerView: "auto",
     spaceBetween: -0.6 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-
     breakpoints: {
       992: {
         spaceBetween: -2.5 * getRem(),
@@ -165,26 +138,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  window.addEventListener("resize", () => {
-    bDayAnimSwiper.update();
-  });
-
-  const mainUslugiSwiper = new Swiper(".main-uslugi__slide", {
+  initSwiper(".main-uslugi__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
+    pagination: { el: ".swiper-pagination" },
     navigation: {
       nextEl: ".main-uslugi .c-title__arrow--next",
       prevEl: ".main-uslugi .c-title__arrow--prev",
     },
-
     breakpoints: {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
@@ -193,26 +156,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  window.addEventListener("resize", () => {
-    mainUslugiSwiper.update();
-  });
-
-  const bDayUslugiSwiper = new Swiper(".b-day-uslugi__slide", {
+  initSwiper(".b-day-uslugi__slide", {
     slidesPerView: "auto",
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
+    pagination: { el: ".swiper-pagination" },
     navigation: {
       nextEl: ".b-day-uslugi .c-title__arrow--next",
       prevEl: ".b-day-uslugi .c-title__arrow--prev",
     },
-
     breakpoints: {
       992: {
         slidesOffsetBefore: 7.5 * getRem(),
@@ -221,8 +174,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  // ====== Resize ======
+
   window.addEventListener("resize", () => {
-    bDayUslugiSwiper.update();
+    swipers.forEach((swiper) => swiper.update());
   });
 
   let mainMenuTabs = document.querySelectorAll(".main-menu__tab");
