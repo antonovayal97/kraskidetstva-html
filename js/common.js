@@ -245,9 +245,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (header) {
-    let button = header.querySelector(".header__burger");
+    const button = header.querySelector(".header__burger");
+    let scrollPosition = 0;
+
     button.addEventListener("click", () => {
-      header.classList.toggle("header--mobile-menu-active");
+      const isActive = header.classList.toggle("header--mobile-menu-active");
+
+      if (isActive) {
+        // сохраняем позицию
+        scrollPosition = window.pageYOffset;
+
+        // блокируем скролл
+        document.body.style.position = "fixed";
+        document.body.style.top = `-${scrollPosition}px`;
+        document.body.style.width = "100%";
+      } else {
+        // возвращаем скролл
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+
+        window.scrollTo(0, scrollPosition);
+      }
     });
   }
 

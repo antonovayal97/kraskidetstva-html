@@ -1,7 +1,7 @@
 .b-day-gives {
   padding: 5.5rem 0;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives {
     padding: 2rem 0;
   }
@@ -9,12 +9,12 @@
 .b-day-gives__title {
   margin-bottom: 3rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__title {
     margin-bottom: 1.5rem;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__title h2 {
     font-family: "TikTok", sans-serif;
     font-weight: 630;
@@ -28,7 +28,7 @@
   display: flex;
   gap: 0.5rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__cards {
     flex-direction: column;
   }
@@ -41,7 +41,7 @@
   width: 34.625rem;
   height: 23.99rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__card {
     width: 100%;
     height: 16rem;
@@ -56,7 +56,7 @@
 .b-day-gives__card--1 .b-day-gives__card-image {
   width: 17.91rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__card--1 .b-day-gives__card-image {
     width: 11.91rem;
     right: -1rem;
@@ -69,7 +69,7 @@
 .b-day-gives__card--2 .b-day-gives__card-image {
   width: 20.5rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__card--2 .b-day-gives__card-image {
     width: 13.3rem;
     right: -2rem;
@@ -84,7 +84,7 @@
   width: 17rem;
   right: 2.1rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__card--3 .b-day-gives__card-image {
     width: 10.5rem;
     right: 0.6rem;
@@ -98,7 +98,7 @@
   letter-spacing: -0.056em;
   color: #1d1d20;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__card-title {
     font-family: "TikTok", sans-serif;
     font-weight: 530;
@@ -118,7 +118,7 @@
 .b-day-gives__card-image img {
   width: 100%;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .b-day-gives__card-image {
     width: 10.5rem;
   }

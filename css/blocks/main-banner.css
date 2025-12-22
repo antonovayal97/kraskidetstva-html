@@ -4,7 +4,7 @@
   position: relative;
   padding-bottom: 3rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner {
     height: 50.8125rem;
     padding-bottom: 0;
@@ -20,7 +20,7 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__content {
     height: auto;
     padding-top: 10.5rem;
@@ -28,26 +28,27 @@
 }
 .main-banner__under-title {
   font-family: "TikTok", sans-serif;
-  font-weight: 400;
+  font-weight: 430;
   font-size: 2rem;
-  line-height: 2.04rem;
-  letter-spacing: -0.03em;
+  line-height: 2.06rem;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
   color: #1d1d20;
   background: #98e51c;
   border-radius: 1rem;
   padding: 0.75rem 1rem;
-  margin-bottom: 1.8125rem;
+  margin-bottom: 1.5125rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__under-title {
     padding: 0.5rem 0.75rem;
     margin-bottom: 0.75rem;
-    border-radius: 10rem;
+    border-radius: 0.5rem;
     font-family: "TikTok", sans-serif;
     font-weight: 630;
     font-size: 0.75rem;
     line-height: 0.765rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.1em;
     text-transform: uppercase;
   }
 }
@@ -58,13 +59,14 @@
   font-weight: 950;
   font-size: 6.875rem;
   line-height: 96%;
+  letter-spacing: -0.03em;
   color: #fff;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__title-content {
     font-size: 3rem;
     line-height: 2.875rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.06em;
   }
 }
 .main-banner__title-shadow {
@@ -75,6 +77,7 @@
   font-weight: 950;
   font-size: 6.875rem;
   line-height: 96%;
+  letter-spacing: -0.03em;
   color: unset;
   /* убираем внутреннюю заливку */
   -webkit-text-fill-color: transparent; /* для WebKit / Blink */
@@ -85,16 +88,16 @@
   /* опционально: чтобы сохранить сглаживание */
   -webkit-font-smoothing: antialiased;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__title-shadow {
     font-size: 3rem;
     line-height: 2.875rem;
-    letter-spacing: -0.03em;
-    top: 0.0625rem;
+    letter-spacing: -0.06em;
+    top: 0.1625rem;
     left: 0.25rem;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__title-shadow {
     -webkit-text-stroke-width: 0.125rem;
   }
@@ -105,8 +108,34 @@
 .main-banner__title-2 {
   position: relative;
   margin-left: 8.75rem;
+  margin-top: -0.2rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
+  .main-banner__title-2 {
+    margin-top: 0.25rem;
+  }
+}
+.main-banner__title-2 .main-banner__title-content {
+  letter-spacing: -0.02em;
+}
+@media (max-width: 849.99px) {
+  .main-banner__title-2 .main-banner__title-content {
+    letter-spacing: -0.05em;
+  }
+}
+.main-banner__title-2 .main-banner__title-shadow {
+  top: 0.9rem;
+  left: 0.8rem;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 849.99px) {
+  .main-banner__title-2 .main-banner__title-shadow {
+    letter-spacing: -0.06em;
+    top: 0.22rem;
+    left: 0.35rem;
+  }
+}
+@media (max-width: 849.99px) {
   .main-banner__title-2 {
     margin-left: 4.6875rem;
   }
@@ -115,13 +144,13 @@
   position: relative;
   display: flex;
   gap: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 3.16rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__cards {
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 14.5rem;
+    margin-top: 14.3rem;
   }
   .main-banner__cards::after {
     position: absolute;
@@ -144,13 +173,19 @@
   -webkit-backdrop-filter: blur(0.3rem);
           backdrop-filter: blur(0.3rem);
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card {
     width: 10.4375rem;
     height: 5.5rem;
     padding: 0.625rem;
     border-radius: 0.75rem;
   }
+}
+.main-banner__card:hover .main-banner__card-image {
+  transform: rotate(4deg) scale(1.3);
+}
+.main-banner__card:hover .main-banner__card-arrow {
+  opacity: 0.7;
 }
 .main-banner__card .main-banner__card-image img {
   width: 100%;
@@ -162,7 +197,7 @@
 .main-banner__card--1 .main-banner__card-image {
   width: 11rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card--1 .main-banner__card-image {
     width: 4rem;
   }
@@ -174,7 +209,7 @@
 .main-banner__card--2 .main-banner__card-image {
   width: 10rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card--2 .main-banner__card-image {
     width: 5rem;
   }
@@ -186,7 +221,7 @@
 .main-banner__card--3 .main-banner__card-image {
   width: 11rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card--3 .main-banner__card-image {
     width: 5rem;
     bottom: -0.5rem;
@@ -199,7 +234,7 @@
 .main-banner__card--4 .main-banner__card-image {
   width: 12rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card--4 .main-banner__card-image {
     width: 5rem;
   }
@@ -211,7 +246,7 @@
 .main-banner__card--5 .main-banner__card-image {
   width: 14rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card--5 .main-banner__card-image {
     width: 6rem;
   }
@@ -219,6 +254,7 @@
 .main-banner__card-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main-banner__card-title {
   font-family: "TikTok", sans-serif;
@@ -228,7 +264,7 @@
   letter-spacing: -0.03em;
   color: #1d1d20;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card-title {
     font-size: 1.0625rem;
     letter-spacing: -0.03em;
@@ -243,8 +279,9 @@
   background: #1d1d20;
   color: #fff;
   line-height: 0;
+  transition: all 0.5s ease;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card-arrow {
     width: 1.125rem;
     height: 1.125rem;
@@ -255,7 +292,7 @@
   width: 1.25rem;
   height: 1.25rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 849.99px) {
   .main-banner__card-arrow .icon {
     width: 0.625rem;
     height: 0.625rem;
@@ -267,6 +304,8 @@
   right: 0;
   z-index: -1;
   line-height: 0;
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
 }
 .main-banner__card-bg {
   position: absolute;
