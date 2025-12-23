@@ -126,9 +126,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initSwiper(".b-day-anim__slider", {
     slidesPerView: "auto",
+    loop: true,
     spaceBetween: -0.6 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
+    speed: 8000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    allowTouchMove: false,
     breakpoints: {
       992: {
         spaceBetween: -2.5 * getRem(),
