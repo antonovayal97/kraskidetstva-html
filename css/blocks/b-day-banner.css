@@ -137,6 +137,7 @@
 }
 .b-day-banner__image-persons {
   position: absolute;
+  z-index: 2;
   right: 3.0625rem;
   bottom: 0;
   width: 58%;

@@ -252,4 +252,8 @@ document.addEventListener("DOMContentLoaded", () => {
       faq.classList.toggle("faq__block--active");
     });
   });
+
+  if (typeof init_stars === "function") {
+    init_stars();
+  }
 });
