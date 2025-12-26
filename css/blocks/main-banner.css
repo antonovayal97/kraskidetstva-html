@@ -4,7 +4,7 @@
   position: relative;
   padding-bottom: 3rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner {
     height: 50.8125rem;
     padding-bottom: 0;
@@ -20,7 +20,7 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__content {
     height: auto;
     padding-top: 10.5rem;
@@ -39,7 +39,7 @@
   padding: 0.75rem 1rem;
   margin-bottom: 1.5125rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__under-title {
     padding: 0.5rem 0.75rem;
     margin-bottom: 0.75rem;
@@ -62,7 +62,7 @@
   letter-spacing: -0.03em;
   color: #fff;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-content {
     font-size: 3rem;
     line-height: 2.875rem;
@@ -88,7 +88,7 @@
   /* опционально: чтобы сохранить сглаживание */
   -webkit-font-smoothing: antialiased;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-shadow {
     font-size: 3rem;
     line-height: 2.875rem;
@@ -97,7 +97,7 @@
     left: 0.25rem;
   }
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-shadow {
     -webkit-text-stroke-width: 0.125rem;
   }
@@ -110,7 +110,7 @@
   margin-left: 8.75rem;
   margin-top: -0.2rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-2 {
     margin-top: 0.25rem;
   }
@@ -118,7 +118,7 @@
 .main-banner__title-2 .main-banner__title-content {
   letter-spacing: -0.02em;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-2 .main-banner__title-content {
     letter-spacing: -0.05em;
   }
@@ -128,14 +128,14 @@
   left: 0.8rem;
   letter-spacing: -0.02em;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-2 .main-banner__title-shadow {
     letter-spacing: -0.06em;
     top: 0.22rem;
     left: 0.35rem;
   }
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__title-2 {
     margin-left: 4.6875rem;
   }
@@ -146,7 +146,7 @@
   gap: 0.5rem;
   margin-top: 3.16rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__cards {
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -173,7 +173,7 @@
   -webkit-backdrop-filter: blur(0.3rem);
           backdrop-filter: blur(0.3rem);
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card {
     width: 10.4375rem;
     height: 5.5rem;
@@ -197,7 +197,7 @@
 .main-banner__card--1 .main-banner__card-image {
   width: 11rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card--1 .main-banner__card-image {
     width: 4rem;
   }
@@ -209,7 +209,7 @@
 .main-banner__card--2 .main-banner__card-image {
   width: 10rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card--2 .main-banner__card-image {
     width: 5rem;
   }
@@ -221,7 +221,7 @@
 .main-banner__card--3 .main-banner__card-image {
   width: 11rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card--3 .main-banner__card-image {
     width: 5rem;
     bottom: -0.5rem;
@@ -234,7 +234,7 @@
 .main-banner__card--4 .main-banner__card-image {
   width: 12rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card--4 .main-banner__card-image {
     width: 5rem;
   }
@@ -246,7 +246,7 @@
 .main-banner__card--5 .main-banner__card-image {
   width: 14rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card--5 .main-banner__card-image {
     width: 6rem;
   }
@@ -264,7 +264,7 @@
   letter-spacing: -0.03em;
   color: #1d1d20;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card-title {
     font-size: 1.0625rem;
     letter-spacing: -0.03em;
@@ -281,7 +281,7 @@
   line-height: 0;
   transition: all 0.5s ease;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card-arrow {
     width: 1.125rem;
     height: 1.125rem;
@@ -292,7 +292,7 @@
   width: 1.25rem;
   height: 1.25rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-banner__card-arrow .icon {
     width: 0.625rem;
     height: 0.625rem;

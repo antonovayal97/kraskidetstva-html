@@ -3,7 +3,7 @@
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-reviews {
     padding-top: 3.9rem;
     padding-bottom: 4rem;
@@ -12,7 +12,7 @@
 .main-reviews__title {
   margin-bottom: 4rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-reviews__title {
     margin-bottom: 2rem;
   }
@@ -20,7 +20,7 @@
 .main-reviews__title h2 {
   color: #fff;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-reviews__widget {
     height: 18.125rem;
   }
@@ -34,7 +34,7 @@
   width: 100vw;
   height: 100%;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-reviews__image {
     display: none;
   }
@@ -42,7 +42,7 @@
 .main-reviews__image-mobile {
   display: none;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-reviews__image-mobile {
     display: block;
     position: absolute;

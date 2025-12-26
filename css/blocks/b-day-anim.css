@@ -2,7 +2,7 @@
   padding-top: 11.25rem;
   padding-bottom: 4rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-anim {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -11,7 +11,7 @@
 .b-day-anim__title {
   margin-bottom: 2rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-anim__title h2 {
     font-family: "TikTok", sans-serif;
     font-weight: 530;
@@ -25,7 +25,7 @@
   margin: 0 -7.5rem;
   margin-top: 1.0075rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-anim__slider {
     margin: 0 -1rem;
     margin-top: -1rem;
@@ -54,7 +54,7 @@
 .b-day-anim__slider .swiper-wrapper {
   padding: 4rem 0;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-anim__slider .swiper-wrapper {
     padding: 3rem 0;
   }
@@ -66,7 +66,7 @@
   overflow: hidden;
   box-shadow: 0 5px 23px 0 rgba(54, 54, 54, 0.22);
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-anim__card {
     border-radius: 1.5rem;
     width: 8.125rem;

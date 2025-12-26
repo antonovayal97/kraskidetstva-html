@@ -4,12 +4,12 @@
 .main-park__title {
   margin-bottom: 4rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__title {
     margin-bottom: 1.9rem;
   }
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__slider {
     margin: 0 -1rem;
   }
@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__slider .swiper-wrapper {
     flex-wrap: unset;
     gap: 0;
@@ -43,7 +43,7 @@
   padding: 2rem;
   overflow: hidden;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__card {
     border-radius: 2rem;
     padding: 1rem;
@@ -59,7 +59,7 @@
   height: 15.1875rem;
   transition: all 0.5s ease;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__card-image {
     width: 8rem;
     height: 8rem;
@@ -84,7 +84,7 @@
   text-transform: uppercase;
   color: #fff;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__card-title {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -143,7 +143,7 @@
   justify-content: center;
   margin-top: 4rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .main-park__button {
     margin-top: 2rem;
   }

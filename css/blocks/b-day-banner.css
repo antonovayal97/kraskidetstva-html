@@ -3,7 +3,7 @@
   height: 57.0625rem;
   line-height: 0;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner {
     height: 50.8rem;
   }
@@ -15,7 +15,7 @@
   line-height: 2.4975rem;
   color: #fff;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__under-title {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -29,7 +29,7 @@
   letter-spacing: -0.07em;
   color: #fff;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__title h1 {
     font-size: 3rem;
     line-height: 2.85rem;
@@ -45,7 +45,7 @@
   width: 47rem;
   padding-top: 12.9rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__content {
     padding-top: 10.5rem;
     width: 100%;
@@ -62,7 +62,7 @@
   flex-direction: column;
   gap: 2rem;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__wrap-title {
     gap: 1.5rem;
   }
@@ -87,13 +87,13 @@
 .b-day-banner__price-sprite img {
   width: 100%;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__price-sprite {
     width: 12.625rem;
     left: -1rem;
   }
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__price {
     font-size: 2.75rem;
     line-height: 2.3925rem;
@@ -108,7 +108,7 @@
   padding: 2rem 2rem;
   letter-spacing: -0.04em;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__button .button {
     padding: 1.5rem 1.25rem;
     font-family: "TikTok", sans-serif;
@@ -157,12 +157,12 @@
 .b-day-banner__image-mobile img {
   width: 100%;
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__image-mobile {
     display: block;
   }
 }
-@media (max-width: 849.99px) {
+@media (max-width: 779.99px) {
   .b-day-banner__image {
     display: none;
   }

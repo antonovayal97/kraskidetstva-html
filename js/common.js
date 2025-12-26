@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    pagination: { el: ".swiper-pagination" },
+    pagination: { el: ".swiper-pagination", clickable: true },
     breakpoints: {
-      992: {
+      781: {
         spaceBetween: 0,
         enabled: false,
         slidesOffsetBefore: 0,
@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 0.25 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    pagination: { el: ".swiper-pagination" },
+    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".main-menu .c-title__arrow--next",
       prevEl: ".main-menu .c-title__arrow--prev",
     },
     breakpoints: {
-      992: {
+      781: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
         spaceBetween: 0.5 * getRem(),
@@ -93,13 +93,13 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 0.25 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    pagination: { el: ".swiper-pagination" },
+    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".b-day-kafe .c-title__arrow--next",
       prevEl: ".b-day-kafe .c-title__arrow--prev",
     },
     breakpoints: {
-      992: {
+      781: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
         spaceBetween: 0.5 * getRem(),
@@ -112,12 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 1.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
+    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".b-day-park .c-title__arrow--next",
       prevEl: ".b-day-park .c-title__arrow--prev",
     },
     breakpoints: {
-      992: {
+      781: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
       },
@@ -137,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     allowTouchMove: false,
     breakpoints: {
-      992: {
+      781: {
         spaceBetween: -2.5 * getRem(),
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
@@ -150,13 +151,13 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    pagination: { el: ".swiper-pagination" },
+    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".main-uslugi .c-title__arrow--next",
       prevEl: ".main-uslugi .c-title__arrow--prev",
     },
     breakpoints: {
-      992: {
+      781: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
       },
@@ -168,13 +169,13 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 0.5 * getRem(),
     slidesOffsetBefore: 1 * getRem(),
     slidesOffsetAfter: 1 * getRem(),
-    pagination: { el: ".swiper-pagination" },
+    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".b-day-uslugi .c-title__arrow--next",
       prevEl: ".b-day-uslugi .c-title__arrow--prev",
     },
     breakpoints: {
-      992: {
+      781: {
         slidesOffsetBefore: 7.5 * getRem(),
         slidesOffsetAfter: 7.5 * getRem(),
       },
@@ -247,9 +248,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   faqs.forEach((faq) => {
     let title = faq.querySelector(".faq__block-title");
+    let content = faq.querySelector(".faq__block-content");
 
     title.addEventListener("click", () => {
-      faq.classList.toggle("faq__block--active");
+      if (faq.classList.contains("faq__block--active")) {
+        // закрытие
+        content.style.height = content.scrollHeight + "px";
+
+        requestAnimationFrame(() => {
+          content.style.height = "0px";
+          content.style.opacity = "0";
+        });
+
+        faq.classList.remove("faq__block--active");
+      } else {
+        // открытие
+        faq.classList.add("faq__block--active");
+
+        content.style.height = content.scrollHeight + "px";
+        content.style.opacity = "1";
+      }
     });
   });
 
