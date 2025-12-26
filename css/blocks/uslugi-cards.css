@@ -1,0 +1,57 @@
+.uslugi-cards {
+  padding-top: 3.5rem;
+  padding-bottom: 4.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 0.5rem;
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    gap: 0.75rem;
+  }
+}
+.uslugi-cards .main-uslugi__card {
+  width: 34.0625rem;
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card {
+    padding: 0.875rem;
+    padding-top: 1rem;
+    min-height: 25.5625rem;
+  }
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card--1 {
+    border: 0.125rem solid #ff9446 !important;
+  }
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card--2 {
+    border: 0.125rem solid #ffb4d4 !important;
+  }
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card--3 {
+    border: 0.125rem solid #8cd3e6 !important;
+  }
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card--4 {
+    border: 0.125rem solid #a6d934 !important;
+  }
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card--5 {
+    border: 0.125rem solid #7be5cc !important;
+  }
+}
+@media (max-width: 779.99px) {
+  .uslugi-cards .main-uslugi__card--6 {
+    border: 0.125rem solid #c7b4ff !important;
+  }
+}
+.uslugi-cards .main-uslugi__card-image {
+  border-radius: 1.5rem;
+}

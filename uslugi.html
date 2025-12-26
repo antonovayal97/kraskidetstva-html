@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title> Услуги парка
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/hystmodal.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/blocks/uslugi-banner.min.css">
+    <link rel="stylesheet" href="./css/blocks/main-uslugi.min.css">
+    <link rel="stylesheet" href="./css/blocks/uslugi-cards.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <header class="header">
+      <div class="c-container">
+        <div class="header__block"><a class="header__logo" href="#"><img src="./img/logo.svg" alt="logo"></a>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Кафе</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Афиша</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">День рождения</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Парк развлечений</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Цены</a></li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <div class="header__phone-n-place"><a class="header__phone" href="tel: +7 903 467-55-57">+7 903 467-55-57</a>
+              <div class="header__place">Волгоград, ТРК «7 звёзд»</div>
+            </div>
+            <div class="header__socials"><a class="c-social btn_shine" href="#">
+                <svg class="icon telegram">
+                  <use href="./img/svg/sprite.svg#telegram"></use>
+                </svg></a><a class="c-social btn_shine" href="#">
+                <svg class="icon vk">
+                  <use href="./img/svg/sprite.svg#vk"></use>
+                </svg></a></div>
+          </div>
+          <button class="header__burger">
+            <svg class="icon burger-menus">
+              <use href="./img/svg/sprite.svg#burger-menus"></use>
+            </svg>
+            <svg class="icon burger-close">
+              <use href="./img/svg/sprite.svg#burger-close"></use>
+            </svg>
+          </button>
+          <div class="header__mobile-menu">
+            <div class="header__mobile-menu-contacts"><a class="header__mobile-menu-phone" href="tel: +7 903 467-55-57">+7 903 467-55-57</a>
+              <div class="header__mobile-menu-address"><span>Волгоград, ТРК «7 звёзд»</span></div>
+            </div>
+            <nav class="header__mobile-menu-list">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Кафе</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Афиша</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">День рождения</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Парк развлечений</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Цены</a></li>
+              </ul>
+            </nav>
+            <div class="header__mobile-menu-socials"><a class="c-social" href="#">
+                <svg class="icon telegram">
+                  <use href="./img/svg/sprite.svg#telegram"></use>
+                </svg></a><a class="c-social" href="#">
+                <svg class="icon vk">
+                  <use href="./img/svg/sprite.svg#vk"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__item"><a href="#">Главная</a></div>
+        <div class="breadcrumbs__slash"><span>/</span></div>
+        <div class="breadcrumbs__item"><span>Услуги парка</span></div>
+      </div>
+      <div class="uslugi-banner">
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script src="./js/banner-stars.js"></script>
+        <script>
+          var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+          function init_stars() {
+              canvas = document.getElementById("canvas");
+              anim_container = document.getElementById("animation_container");
+              dom_overlay_container = document.getElementById("dom_overlay_container");
+              var comp=AdobeAn.getComposition("32F3925B9E1B9D4393A7746EA8B0BBC6");
+              var lib=comp.getLibrary();
+              handleComplete({},comp);
+          }
+          function handleComplete(evt,comp) {
+              //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+              var lib=comp.getLibrary();
+              var ss=comp.getSpriteSheet();
+              exportRoot = new lib.Безымянный1();
+              stage = new lib.Stage(canvas);	
+              //Registers the "tick" event listener.
+              fnStartAnimation = function() {
+                  stage.addChild(exportRoot);
+                  createjs.Ticker.setFPS(lib.properties.fps);
+                  createjs.Ticker.addEventListener("tick", stage);
+              }	    
+              //Code to support hidpi screens and responsive scaling.
+              function makeResponsive(isResp, respDim, isScale, scaleType) {		
+                  var lastW, lastH, lastS=1;		
+                  window.addEventListener('resize', resizeCanvas);		
+                  resizeCanvas();		
+                  function resizeCanvas() {			
+                      var w = lib.properties.width, h = lib.properties.height;			
+                      var iw = window.innerWidth, ih=window.innerHeight;			
+                      var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+                      if(isResp) {                
+                          if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+                              sRatio = lastS;                
+                          }				
+                          else if(!isScale) {					
+                              if(iw<w || ih<h)						
+                                  sRatio = Math.min(xRatio, yRatio);				
+                          }				
+                          else if(scaleType==1) {					
+                              sRatio = Math.min(xRatio, yRatio);				
+                          }				
+                          else if(scaleType==2) {					
+                              sRatio = Math.max(xRatio, yRatio);				
+                          }			
+                      }			
+                      canvas.width = w*pRatio*sRatio;			
+                      canvas.height = h*pRatio*sRatio;
+                      canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+                      canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+                      stage.scaleX = pRatio*sRatio;			
+                      stage.scaleY = pRatio*sRatio;			
+                      lastW = iw; lastH = ih; lastS = sRatio;            
+                      stage.tickOnUpdate = false;            
+                      stage.update();            
+                      stage.tickOnUpdate = true;		
+                  }
+              }
+              makeResponsive(false,'both',false,1);	
+              AdobeAn.compositionLoaded(lib.properties.id);
+              fnStartAnimation();
+          }
+        </script>
+        <div class="uslugi-banner__image">
+          <svg viewBox="0 0 1920 913" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <mask id="shapeMask" maskUnits="userSpaceOnUse">
+                <rect width="1920" height="913" fill="black"></rect>
+                <path d="M1670.59 -165.277C1693.53 -180.397 1721.37 -181.408 1753.01 -171.653C1781.25 -162.965 1804.79 -149.137 1827.25 -131.461C1830.41 -136.798 1832.94 -141.235 1835.7 -145.626C1853.39 -173.853 1897.12 -181.23 1938.81 -162.88C1943.98 -160.596 1949.23 -157.806 1953.08 -154.529C1981.65 -130.16 2006.81 -104.826 2017.15 -74.6148C2024.15 -54.1306 2030.75 -33.6652 2035.52 -13.2091L2041.13 17.4423C2042.03 24.5856 2042.52 45.9498 2041.13 48.1874L2010.5 738.171C2012.75 776.687 2015.96 815.39 2005.33 851.715C2000.71 867.452 1993.87 882.535 1975.48 891.541C1930.9 913.392 1895.96 906.118 1842.78 870.982C1840.35 869.371 1838.32 867.377 1833.63 863.548L1833.57 863.567C1830.29 870.56 1827.61 876.009 1825.16 881.57C1818.33 896.98 1804.31 904.348 1780.21 900.659C1761.97 897.851 1743.08 892.608 1725.65 886.083C1707.56 879.351 1690.88 869.765 1671.78 860.59C1670.13 863.295 1667.9 866.17 1666.5 869.306C1660.07 883.293 1649.64 894.883 1633.62 903.637C1609.51 916.818 1581.68 915.536 1550.95 903.215C1523.52 892.234 1501.2 876.515 1480.27 857.06C1476.67 862.116 1473.78 866.338 1470.68 870.486C1450.71 897.167 1406.54 900.931 1366.5 879.211C1361.54 876.515 1356.55 873.294 1352.97 869.718C1340.4 857.079 1328.63 844.281 1318.89 831.024C1314.96 837.353 1309.49 843.083 1301.61 847.783C1258.96 873.229 1223.55 868.838 1167.66 838.196C1165.1 836.791 1162.91 834.966 1157.93 831.539L1157.88 831.558C1155.17 838.795 1152.97 844.45 1150.98 850.198C1145.43 866.113 1132.07 874.614 1107.76 872.91C1089.35 871.609 1070.09 867.939 1052.18 862.874C1033.61 857.641 1016.2 849.458 996.409 841.875C994.987 844.721 993.003 847.764 991.861 851.003C986.602 865.477 977.16 877.882 961.916 887.918C938.971 903.037 911.131 904.048 879.492 894.293C851.25 885.605 827.715 871.778 805.256 854.102C802.093 859.448 799.567 863.876 796.806 868.267C779.11 896.493 735.381 903.871 693.692 885.521C688.526 883.246 683.286 880.447 679.421 877.17C664.542 864.475 650.59 851.518 639.173 837.756C635.112 845.536 629.113 852.548 619.699 858.09C576.934 883.33 541.543 878.771 485.798 847.848C483.252 846.434 481.072 844.59 476.103 841.145L476.056 841.164C473.324 848.382 471.087 854.027 469.057 859.775C463.432 875.653 450.023 884.089 425.72 882.272C407.313 880.877 388.083 877.104 370.191 871.946C351.634 866.619 334.275 858.362 314.521 850.675C313.08 853.512 311.077 856.536 309.926 859.775C304.592 874.221 295.085 886.579 279.794 896.54C256.773 911.538 228.924 912.418 197.332 902.504C169.137 893.666 145.677 879.726 123.302 861.938C120.111 867.265 117.557 871.684 114.787 876.065C96.9412 904.208 53.1839 911.36 11.5882 892.805C6.44135 890.502 1.20096 887.674 -2.63577 884.379C-31.093 859.869 -56.1066 834.413 -66.3066 804.146C-79.0614 766.22 -61.7774 -13.1997 -61.7774 -13.1997H-61.3751C-62.4886 -40.0876 -61.8897 -66.6945 -54.497 -92.1593C-49.921 -107.906 -43.1272 -123.007 -24.7484 -132.051C19.7857 -154.005 54.7373 -146.815 108.002 -111.801C110.435 -110.2 112.475 -108.206 117.173 -104.386L117.229 -104.405C120.495 -111.398 123.153 -116.856 125.595 -122.436C132.389 -137.856 146.388 -145.261 170.494 -141.628C188.742 -138.857 207.645 -133.661 225.097 -127.173C243.195 -120.48 259.899 -110.94 279.017 -101.793C280.673 -104.508 282.882 -107.382 284.276 -110.518C290.677 -124.524 301.083 -136.133 317.076 -144.924C341.153 -158.162 368.993 -156.945 399.752 -144.69C427.208 -133.774 449.555 -118.111 470.544 -98.6941C474.128 -103.759 477.001 -107.981 480.089 -112.138C499.994 -138.867 544.163 -142.724 584.252 -121.097C589.211 -118.411 594.227 -115.209 597.811 -111.632C610.239 -99.1903 621.898 -86.5983 631.593 -73.5476C634.775 -77.0209 638.64 -80.204 643.375 -83.0313C686.009 -108.477 721.429 -104.096 777.323 -73.4539C779.878 -72.0496 782.068 -70.224 787.055 -66.7975L787.112 -66.8162C789.816 -74.0531 792.024 -79.6984 794.008 -85.4561C799.557 -101.372 812.92 -109.872 837.232 -108.168C855.639 -106.867 874.898 -103.197 892.809 -98.123C911.384 -92.8989 928.789 -84.7165 948.581 -77.1332C950.004 -79.9699 951.988 -83.0126 953.129 -86.2519C958.388 -100.726 967.831 -113.13 983.074 -123.167C1006.02 -138.286 1033.86 -139.297 1065.5 -129.542C1093.74 -120.854 1117.28 -107.026 1139.73 -89.3507C1142.9 -94.6871 1145.42 -99.1247 1148.18 -103.516C1165.88 -131.742 1209.61 -139.119 1251.3 -120.77C1256.46 -118.485 1261.71 -115.696 1265.57 -112.419C1279.32 -100.688 1292.28 -88.7328 1303.18 -76.1128C1303.54 -78.3971 1303.96 -80.6721 1304.42 -82.9471C1307.73 -99.0124 1313.29 -114.61 1330.9 -125.086C1373.54 -150.532 1408.95 -146.15 1464.85 -115.508C1467.4 -114.104 1469.59 -112.278 1474.58 -108.852L1474.63 -108.871C1477.34 -116.108 1479.55 -121.753 1481.53 -127.51C1487.08 -143.426 1500.44 -151.927 1524.75 -150.223C1543.16 -148.922 1562.42 -145.252 1580.33 -140.177C1598.91 -134.953 1616.31 -126.771 1636.1 -119.188C1637.53 -122.024 1639.51 -125.067 1640.65 -128.306C1645.91 -142.78 1655.35 -155.185 1670.6 -165.221L1670.59 -165.277Z" fill="white"></path>
+              </mask>
+            </defs>
+            <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#shapeMask)">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background: #6CB1DA;">
+                <div class="uslugi-banner__image-img"><img class="uslugi-banner__image-persons" src="./img/uslugi-banner__image-img.webp" alt="">
+                  <div id="animation_container" style="width:1920px; height:1080px">
+                    <canvas id="canvas" width="1920" height="1080" style="position: absolute; display: block;"></canvas>
+                    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1080px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
+          </svg>
+        </div>
+        <div class="uslugi-banner__image-mobile"><img src="./img/uslugi-banner__image-mobile.webp" alt="alt"></div>
+        <div class="uslugi-banner__content c-container">
+          <div class="uslugi-banner__under-title"><span>Краски детства</span></div>
+          <div class="uslugi-banner__title">
+            <h1>Услуги <br>парка</h1>
+          </div>
+        </div>
+      </div>
+      <div class="uslugi-cards c-container"><a class="main-uslugi__card main-uslugi__card--1" href="#">
+          <div class="main-uslugi__card-bg"><img src="./img/main-uslugi__card-1.svg" alt=""></div>
+          <div class="main-uslugi__card-image"><img src="./img/main-uslugi__card-image-1.webp" alt=""></div>
+          <div class="main-uslugi__card-name"><span>Аквагрим</span></div>
+          <div class="main-uslugi__card-description"><span>Красочный аквагрим для детей — безопасные краски, быстрые рисунки и яркие образы для праздника</span></div></a><a class="main-uslugi__card main-uslugi__card--2" href="#">
+          <div class="main-uslugi__card-bg"><img src="./img/main-uslugi__card-2.svg" alt=""></div>
+          <div class="main-uslugi__card-image"><img src="./img/main-uslugi__card-image-2.webp" alt=""></div>
+          <div class="main-uslugi__card-name"><span>Бьюти зона</span></div>
+          <div class="main-uslugi__card-description"><span>Красивые причёски, яркие косички и лёгкий детский макияж — стильный образ для вашего ребёнка.</span></div></a><a class="main-uslugi__card main-uslugi__card--3" href="#">
+          <div class="main-uslugi__card-bg"><img src="./img/main-uslugi__card-3.svg" alt=""></div>
+          <div class="main-uslugi__card-image"><img src="./img/main-uslugi__card-image-3.webp" alt=""></div>
+          <div class="main-uslugi__card-name"><span>Мастер-классы</span></div>
+          <div class="main-uslugi__card-description"><span>Творческие и увлекательные занятия, где дети создают поделки, рисунки и сувениры своими руками.</span></div></a><a class="main-uslugi__card main-uslugi__card--4" href="#">
+          <div class="main-uslugi__card-bg"><img src="./img/main-uslugi__card-4.svg" alt=""></div>
+          <div class="main-uslugi__card-image"><img src="./img/main-uslugi__card-image-4.webp" alt=""></div>
+          <div class="main-uslugi__card-name"><span>Фотограф</span></div>
+          <div class="main-uslugi__card-description"><span>Живые и яркие фотографии, фиксирующие эмоции и атмосферу детского праздника.</span></div></a><a class="main-uslugi__card main-uslugi__card--5" href="#">
+          <div class="main-uslugi__card-bg"><img src="./img/main-uslugi__card-5.svg" alt=""></div>
+          <div class="main-uslugi__card-image"><img src="./img/main-uslugi__card-image-5.webp" alt=""></div>
+          <div class="main-uslugi__card-name"><span>Видеограф</span></div>
+          <div class="main-uslugi__card-description"><span>Профессиональная видеосъёмка, чтобы сохранить лучшие моменты праздника в качественном ролике.</span></div></a><a class="main-uslugi__card main-uslugi__card--6" href="#">
+          <div class="main-uslugi__card-bg"><img src="./img/main-uslugi__card-6.svg" alt=""></div>
+          <div class="main-uslugi__card-image"><img src="./img/main-uslugi__card-image-6.webp" alt=""></div>
+          <div class="main-uslugi__card-name"><span>Аниматоры</span></div>
+          <div class="main-uslugi__card-description"><span>Весёлые ведущие с интерактивами, играми и мини-шоу, которые увлекут детей любого возраста.</span></div></a></div>
+    </main>
+    <div class="page-loader">
+      <div class="spinner"></div>
+    </div>
+    <footer class="footer c-container">
+      <div class="footer__image"><img src="./img/footer.svg" alt=""></div>
+      <div class="footer__image-mobile"><img src="./img/footer-mobile.svg" alt=""></div>
+      <div class="footer__left"><a class="footer__logo" href="#"><img src="./img/logo.svg" alt="logo"></a>
+        <nav class="footer__menu">
+          <ul>
+            <li><a class="btn_shine" href="#">О компании</a></li>
+            <li><a class="btn_shine" href="#">Кафе</a></li>
+            <li><a class="btn_shine" href="#">Новости</a></li>
+            <li><a class="btn_shine" href="#">Афиша</a></li>
+            <li><a class="btn_shine" href="#">Контакты</a></li>
+            <li><a class="btn_shine" href="#">День рождения</a></li>
+            <li><a class="btn_shine" href="#">Услуги</a></li>
+            <li><a class="btn_shine" href="#">Парк развлечений</a></li>
+            <li><a class="btn_shine" href="#">Акции</a></li>
+            <li><a class="btn_shine" href="#">Цены</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <div class="footer__socials"><a class="c-social btn_shine" href="#">
+              <svg class="icon telegram">
+                <use href="./img/svg/sprite.svg#telegram"></use>
+              </svg></a><a class="c-social btn_shine" href="#">
+              <svg class="icon vk">
+                <use href="./img/svg/sprite.svg#vk"></use>
+              </svg></a></div><a class="footer__phone" href="tel: +7 903 467-55-57">+7 903 467-55-57</a>
+        </div>
+        <div class="footer__links"><a class="footer__link" href="#">Политика конфиденциальности</a><a class="footer__link footer__link-pr" href="#">Дизайн и разработка — PR-Volga</a></div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./libs/hystmodal.min.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>
